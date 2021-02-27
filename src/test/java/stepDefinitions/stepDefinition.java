@@ -48,4 +48,21 @@ public class stepDefinition {
     public void userLoginIntoApplicationWithUsernameUsernameAndPasswordPassword(String user, String pass) {
         System.out.println("User: "+user + "\nPass: "+pass);
     }
+
+    @Given("Validate The browser")
+    public void validate_the_browser() {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("Browser validated");
+    }
+    @When("Browser is triggering")
+    public void browser_is_triggering() {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("Browser triggered");
+    }
+    @Then("Check if browser is started")
+    public void check_if_browser_is_started() {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("Browser started");
+    }
+
 }
