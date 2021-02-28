@@ -1,9 +1,5 @@
 Feature: Application Login
 
-  Background:
-    Given Validate The browser
-    When Browser is triggering
-    Then Check if browser is started
   @san
   Scenario: Home page default login
     Given User is on landing page
@@ -11,14 +7,14 @@ Feature: Application Login
     Then Home page is populated
     And Cards displayed are "true"
 
-  @smoke
+  @mobile
   Scenario: Home page default login
     Given User is on landing page
     When User login into application with username "elo2" and password "124"
     Then Home page is populated
     And Cards displayed are "false"
 
-  @smoke
+  @mobile
   Scenario: Home page default login
     Given User is on landing page
     When User sign up with following details
