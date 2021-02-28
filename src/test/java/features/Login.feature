@@ -1,5 +1,10 @@
 Feature: Application Login
 
+  Background:
+    Given Validate The browser
+    When Browser is triggering
+    Then Check if browser is started
+
   @san
   Scenario: Home page default login
     Given User is on landing page
